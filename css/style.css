@@ -34,10 +34,30 @@ a{
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
 	border-bottom:1px solid #dedede;
+  color: #000;
 }
-
+a:hover,
+a:focus,
+a:active {
+  background-color: #be95be;
+  color: #fff;
+}
 a:focus {
   outline:none;
+}
+a.button {
+    border: 3px solid #000;
+    display: inline-block;
+    padding: 1em;
+    width: fit-content;
+    font-weight: 700;
+    color: #000;
+}
+a.button:hover,
+a.button:focus, 
+a.button:active {
+    border: 3px solid #be95be;
+    color: #fff;
 }
 
 strong{
@@ -276,6 +296,7 @@ header .logo > a{
 
 header .logo > a:hover{
   color:#c3c3c3;
+  background-color: transparent;
 }
 
 header li{
@@ -296,6 +317,7 @@ header li > a{
 
 header li > a:hover{
   color:#be95be;
+  background-color: transparent;
 }
 
 header li > a #active{
@@ -367,24 +389,12 @@ CONTENT
   margin:50px auto;
 }
 
-
-.content .text-intro{
-  width: 1140px;
-  margin: 15vh auto 0;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.content > section {
+    padding: 10em 0 15em;
 }
-.content .title-text{
-  margin: 0 auto;
-  max-width: 1140px;
-  width: 90%;
-  }
 
 .content h1{
   font-size:43px;
-  width:50%;
   text-transform:uppercase;
   color:#000000;
   font-weight:900;
@@ -398,7 +408,34 @@ CONTENT
   font-weight:400;
   line-height:22px;
   letter-spacing:1px;
-  width:40%;
+}
+
+.content .text-intro{
+  width: 1140px;
+  margin: 15vh auto 0;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .text-intro h1{
+  width:60%;
+  }
+
+.content .text-intro h3 {
+    width: 40%;
+    line-height: 130%;
+    margin: 3em 0 5em;
+}
+
+.content .title-text {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 90%;
+  }
+
+.content .title-text.acenter {
+  text-align: center;
 }
 
         .typed-cursor{
@@ -449,7 +486,7 @@ HOME SIDEBAR
   right:0;
   height:100%;
   background:#f4f4f4;
-  z-index:9;
+  z-index:1;
   overflow:hidden;
   background-size:100%;
 }
@@ -503,9 +540,9 @@ PORTFOLIO GRID
 #ajax-content{width:100%;}
 
 .portfolio-grid{
-  width:1170px;
+  width:1100px;
   position:relative;
-  margin: 30px auto;
+  margin: 5em auto 0;
   overflow:hidden;
 }
 
@@ -520,6 +557,7 @@ li.grid-item{
   position:relative;
   float:left;
   padding:15px;
+  overflow: hidden;
 }
 
 .grid-hover{

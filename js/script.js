@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Front End Developer ", "cat lover ", "gamer ", "coffee addict ", "Graphic Designer "],
+            strings: ["Front End Developer.", "cat lover.", "gamer.", "coffee addict.", "Graphic Designer."],
             typeSpeed: 90,
             backDelay: 400,
             loop: true,
@@ -193,8 +193,7 @@ function sidebarhero() {
 
     $(window).bind('scroll', function(){
         var offset = $(document).scrollTop()
-            ,opacity=0
-        ;
+            ,opacity=0;
         if( offset<=fadeStart ){
             opacity=1;
         }else if( offset<=fadeUntil ){
