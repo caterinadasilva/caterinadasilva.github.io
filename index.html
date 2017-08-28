@@ -5,12 +5,13 @@
 
   <meta charset="utf-8">
   <title>Caterina Da Silva | Front End Developer - Graphic Designer</title>
-  <meta name="description" content="">
+  <meta name="description" content="Caterina Da Silva is a graphic designer, front end developer and Laboratoria student based in Santiago de Chile. Check out some of her works.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content="Caterina Da Silva">
   <link rel="icon" type="image/png" href="img/icon.png" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/simplegrid.css">
   <link rel="stylesheet" href="css/style-responsive.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!--[if lt IE 9]>
@@ -55,7 +56,7 @@
 
 <!--Content-->
 
-<div class="content" id="ajax-content">
+<div class="content grid grid-pad" id="ajax-content">
 
   <div class="text-intro" id="site-type">
     <h1>Hello! I'm Caterina,</h1>
@@ -67,156 +68,252 @@
   </div>
 
 
-<!--Portfolio grid-->
-<div id="portfolio" class="clear"></div>
-<section>
-  <div class="title-text acenter" id="site-type">
-    <h1>Portfolio</h1>
-    <p>Some apps and websites I've been developing recently.</p>
-  </div>
-  <ul class="portfolio-grid">
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/1.jpg">
-      <div class="grid-hover">
-        <h1>Lyft App</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/lyft-app"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/lyft-app"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/5.jpg">
-      <div class="grid-hover">
-        <h1>Culinary Lab</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/culinary-lab"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/culinary-lab/"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>    
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/2.jpg">
-      <div class="grid-hover">
-        <h1>Freelancer</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/freelancer-flexbox"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/freelancer-flexbox"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>  
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/3.jpg">
-      <div class="grid-hover">
-        <h1>Lyft Sprint</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/lyft-sprint-3"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/lyft-sprint-3"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>    
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/4.jpg">
-      <div class="grid-hover">
-        <h1>Trello Dupe</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/trello-laboratoria"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/trello-laboratoria"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>    
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/6.jpg">
-      <div class="grid-hover">
-        <h1>Trans Lab</h1>
-        <p class="portfolio-links">
-          <a target="/blank" href="https://github.com/caterinadasilva/trans-lab"><i class="fa fa-code"></i> Code</a>
-          <a target="/blank" href="https://caterinadasilva.github.io/trans-lab"><i class="fa fa-external-link"></i> Demo</a>
-        </p>
-      </div>
-    </li>  
-  </ul>
-</section>
-<!--About Me-->
-<div id="about-me" class="clear"></div>
-<section>
-  <div class="title-text">
-    <h1>More about me</h1>
-  </div>
-  <div class="one-column">
-    <img class="about-image" src="img/caterina.jpg">
-    <p>Front-End Developer | Graphic Designer</p>
-    <p>I am passionate about code and a perfectionist with everything I do. I accept all the challenges and I do not easily give up. I firmly believe that teamwork makes us stronger. <b>Let's work together ;-)</b></p>
-  </div>
-  <div class="two-column">
-    <p>Tools of the trade</p>
-    <ul class="tools-grid">
+  <!--Portfolio grid-->
+  <div id="portfolio" class="clear"></div>
+  <section class="grid grid-pad">
+    <div class="title-text acenter" id="site-type">
+      <h1>Portfolio</h1>
+      <p>Some apps and websites I've been developing recently.</p>
+    </div>
+    <ul class="portfolio-grid">
       <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/1.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>  
+        <img src="img/portfolio/1.jpg">
+        <div class="grid-hover">
+          <h1>Lyft App</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/lyft-app"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/lyft-app"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
       </li>
       <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/2.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>      
-      </li>        
-      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/3.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>      
-      </li>        
-      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/4.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>      
+        <img src="img/portfolio/5.jpg">
+        <div class="grid-hover">
+          <h1>Culinary Lab</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/culinary-lab"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/culinary-lab/"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
       </li>    
       <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/5.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>      
-      </li>    
-      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-        <img src="img/logo/6.jpg">
-          <a class="ajax-link" href="single.html">  
-            <div class="grid-hover">
-              <h1>Single</h1>
-              <p>Branding</p>
-            </div>
-          </a>      
+        <img src="img/portfolio/2.jpg">
+        <div class="grid-hover">
+          <h1>Freelancer</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/freelancer-flexbox"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/freelancer-flexbox"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
       </li>  
-    </ul>  
-  </div>
-</section>
+      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+        <img src="img/portfolio/3.jpg">
+        <div class="grid-hover">
+          <h1>Lyft Sprint</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/lyft-sprint-3"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/lyft-sprint-3"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
+      </li>    
+      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+        <img src="img/portfolio/4.jpg">
+        <div class="grid-hover">
+          <h1>Trello Dupe</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/trello-laboratoria"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/trello-laboratoria"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
+      </li>    
+      <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+        <img src="img/portfolio/6.jpg">
+        <div class="grid-hover">
+          <h1>Trans Lab</h1>
+          <p class="portfolio-links">
+            <a target="/blank" href="https://github.com/caterinadasilva/trans-lab"><i class="fa fa-code"></i> Code</a>
+            <a target="/blank" href="https://caterinadasilva.github.io/trans-lab"><i class="fa fa-external-link"></i> Demo</a>
+          </p>
+        </div>
+      </li>  
+    </ul>
+  </section>
 
-<!--Contact-->
-<div id="contact" class="clear"></div>
-<section>
-  <div class="title-text" id="site-type">
-    <h1>Contact</h1>
-    <p>All project is clean and simplicity modern style.</p>
-  </div>
-</section>
+  <!--About Me-->
+  <div id="about-me" class="clear"></div>
+  <section class="grid grid-pad">
+    <div class="title-text acenter">
+      <h1>More about me</h1>
+      <p>Front-End Developer | Graphic Designer</p>
+    </div>
+    <div class="info col-2-3 mobile-col-1-1 push-1-6">
+      <img class="about-image" src="img/caterina.jpg">
+      <p>I am passionate about code and a perfectionist with everything I do. I accept all the challenges and I do not easily give up. I firmly believe that teamwork makes us stronger. <b>Let's work together ;-)</b></p>
+      <a class="button" href="CV_CaterinaDaSilva.pdf" target="/blank">Here's my CV!</a>
+
+      <div class="col-1-1 acenter">
+        <h2>Skills</h2>
+        <ul class="skill-grid">
+          <li class="skill-item">
+            <img src="img/skills/self-taught.png">
+            <h4>Self-Taught</h4>
+          </li>
+          <li class="skill-item">
+            <img src="img/skills/teamwork.png">
+            <h4>Teamwork</h4>
+          </li>
+          <li class="skill-item">
+            <img src="img/skills/creativity.png">
+            <h4>Creativity</h4>
+          </li>
+          <li class="skill-item">
+            <img src="img/skills/adaptability.png">
+            <h4>Adaptability</h4>
+          </li>
+          <li class="skill-item">
+            <img src="img/skills/logic-thinking.png">
+            <h4>Logical thinking</h4>
+          </li>
+          <li class="skill-item">
+            <img src="img/skills/leadership.png">
+            <h4>Leadership</h4>
+          </li>
+        </ul>  
+      </div>
+    </div>
+
+    <div class="col-1-1 acenter info">
+      <h2>Experienced in</h2>
+      <ul class="tools-grid">
+        <li class="tool-item">
+          <img src="img/knowledge/information-architecture.png">
+          <h4>Information architecture</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/wireframing.png">
+          <h4>Wireframing</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/UI.png">
+          <h4>User Interface</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/UX.png">
+          <h4>User Experience</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/graphic-design.png">
+          <h4>Graphic Design</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/analytics-SEO.png">
+          <h4>Analytics & SEO</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/digital-design-experience-methodology.png">
+          <h4>Digital design experience methodology</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/branding.png">
+          <h4>Branding</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/user-research.png">
+          <h4>User Research</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/Responsive-design.png">
+          <h4>Responsive design</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/mailing.png">
+          <h4>Mailing</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/knowledge/mobile-development.png">
+          <h4>Mobile Development</h4>
+        </li>
+      </ul>  
+    </div>
+
+    <div class="col-1-1 acenter info">
+      <h2>Tools of the trade</h2>
+      <ul class="tools-grid">
+        <li class="tool-item">
+          <img src="img/tools/illustrator.png">
+          <h4>Adobe Illustrator</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/indesign.png">
+          <h4>Adobe Indesign</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/photoshop.png">
+          <h4>Adobe Photoshop</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/html.png">
+          <h4>HTML5</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/css3.png">
+          <h4>CSS3</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/js.png">
+          <h4>Javascript</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/jquery.gif">
+          <h4>jQuery</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/less.png">
+          <h4>LESS</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/sass.png">
+          <h4>SASS</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/bootstrap.png">
+          <h4>Bootstrap</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/materialize.png">
+          <h4>Materialize</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/npm.svg">
+          <h4>NPM</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/gulp.png">
+          <h4>Gulp</h4>
+        </li>
+        <li class="tool-item">
+          <img src="img/tools/nodejs.png">
+          <h4>Node JS</h4>
+        </li>
+      </ul>  
+    </div>
+    
+  </section>
+
+  <!--Contact-->
+  <div id="contact" class="clear"></div>
+  <section class="grid grid-pad contact">
+    <div class="title-text acenter" id="site-type">
+      <h1>Contact</h1>
+      <p>I'd love to get in touch for any project you have in mind.</p>
+      <ul class="social-media">
+        <li><a href="mailto:caterinadasilva@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/caterinadasilva/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/caterinadasilva"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a target="/blank" href="https://www.behance.net/caterinadasilva"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </section>
 </div>
 
 <!--Sidebar-->
@@ -233,8 +330,9 @@
 
 <!--Footer-->
 <footer id="footer-box">
-  <div class="footer-margin">
-  <div class="copyright" id="footer-left">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+  <div class="footer-margin grid grid-pad">
+  <div class="copyright" id="footer-left">© Copyright <script type="text/javascript">document.write(new Date().getFullYear());
+</script> Caterina Da Silva. All Rights Reserved.</div>
   </div>
 </footer>
 

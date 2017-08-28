@@ -1,20 +1,18 @@
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
-    width:1000px;
+
   }
 
   .content .text-intro,
   .content .title-text {
-    width:1000px;
+   
   }
 
   .footer-margin{
-    width:1000px;
   }
 
   #full{
-    width:1000px;
   }
 
   .prev-next{
@@ -49,16 +47,16 @@
 
 
   header.boxed .header-margin{
-    width:800px;
+    width: 90%;
   }
 
-  .content .text-intro,
-  .content .title-text {
-    width:800px;
+  .content .text-intro {
+    width: 50%;
+    margin-left: 5em;
   }
 
   .footer-margin{
-    width:800px;
+  
   }
 
   .content .text-intro h1, 
@@ -69,7 +67,7 @@
 
 
   #full{
-    width:800px;
+ 
   }
 
   .prev-next{
@@ -91,7 +89,7 @@
 
   .portfolio-grid{
 
-    width:830px;
+    width:750px;
 
   }
 
@@ -103,7 +101,9 @@
 
 
 @media all and (max-width: 1023px) and (min-width: 769px) {
-
+  .social-index {
+    display: none;
+}
 
   header.boxed .header-margin{
     width:600px;
@@ -111,8 +111,12 @@
 
   .content .text-intro,
   .content .title-text {
-    width:600px;
+    width: 95%;
+text-align: center;
   }
+      a.button {
+        margin: 1em auto 2em;
+      }
 
   .footer-margin{
     width:600px;
@@ -174,18 +178,30 @@
 
 
 @media all and (max-width: 768px) and (min-width: 481px) {
-
+  .skill-item, .tool-item {
+    width: 48%;
+}
+  .content .about-image {
+    float: none;
+    margin: 0 auto 3em;
+}
 
   header.boxed .header-margin{
     width:400px;
   }
 
   .content .text-intro {
-    width:400px;
+    width: 95%;
+    text-align: center;
   }
+      a.button {
+        margin: 1em auto 2em;
+        display: block;
+      }
 
   .footer-margin{
     width:400px;
+        margin: 0 auto;
   }
 
   .content .text-intro h1, 
@@ -272,18 +288,30 @@
 
 
 @media all and (max-width: 480px) and (min-width: 320px) {
-
+  .skill-item, .tool-item {
+    width: 48%;
+}
+  .content .about-image {
+    float: none;
+    margin: 0 auto 3em;
+}
 
   header.boxed .header-margin{
     width:280px;
   }
 
   .content .text-intro{
-    width:280px;
-  }
+    width:95%;
+    text-align: center;
+      }
+      a.button {
+        margin: 1em auto 2em;
+        display: block;
+      }
 
   .footer-margin{
     width:280px;
+        margin: 0 auto;
   }
   
   .footer-margin .copyright{line-height:40px;}
